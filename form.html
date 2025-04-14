@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="form-style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!----===== DOB BS CSS ===== -->
+    <link
+        href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v4.0.4.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <title>KUUMAT Regisration Form </title>
+</head>
+<body>
+    <div class="container">
+        <header>KUUMAT Registration</header>
+
+        <form action="#">
+            <div class="title">
+                <label>Program Applied For</label>
+                <select required>
+                    <option disabled selected>Select Program</option>
+                    <option>BBA-Honors</option>
+                    <option>BBA-Emphasis</option>
+                    <option>BBIS</option>
+                </select>
+            </div>
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                        <label>Title:</label>
+                            <div class="input">
+                                <input type="radio" id="mr" name="title" value="Male">
+                                <label for="male">Mr</label>
+                                <input type="radio" id="miss" name="title" value="Female">
+                                <label for="female">Miss</label>
+                                <input type="radio" id="Mrs" name="gender" value="Mrs">
+                                <label for="other">Mrs</label>
+                            </div>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth (AD)</label>
+                            <input type="date" placeholder="Enter birth date">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ndob">Date of Birth (BS)</label>
+                            <input type="text" id="ndob" placeholder="Select a date" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter your nationality">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Citizenship Number</label>
+                            <input type="number" placeholder="Enter your Citizenship Number">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Citizenship Issued District</label>
+                            <input type="text" placeholder="Enter your DAO">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="details address">
+                    <span class="title">Permanent Address</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" id="permanent-country" placeholder="Enter your country" >
+                            </div>
+                            <div class="input-field">
+                                <label>Province</label>
+                                <input type="text" id="permanent-province" placeholder="Enter your province" >
+                            </div>
+                            <div class="input-field">
+                                <label>District</label>
+                                <input type="text" id="permanent-district" placeholder="Enter district name" >
+                            </div>
+                            <div class="input-field">
+                                <label>Local level</label>
+                                <input type="text" id="permanent-local-level" placeholder="Enter rural/municipality/metro name">
+                            </div>
+                            <div class="input-field">
+                                <label>Ward Number</label>
+                                <input type="number" id="permanent-ward-number" placeholder="Enter ward number" >
+                            </div>
+                            <div class="input-field">
+                                <label>Tole</label>
+                                <input type="text" id="permanent-tole" placeholder="Enter tole name">
+                            </div>
+                        </div>
+                    <hr>
+                    <span class="title">Contact Address</span>
+                    <div>
+                        <input type="checkbox" id="same-as-permanent" name="same-as-permanent">
+                        <label for="same-as-permanent">Same as permanent address</label>
+                    </div>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" id="contact-country" placeholder="Enter your country" >
+                            </div>
+                            <div class="input-field">
+                                <label>Province</label>
+                                <input type="text" id="contact-province" placeholder="Enter your province" >
+                            </div>
+                            <div class="input-field">
+                                <label>District</label>
+                                <input type="text" id="contact-district" placeholder="Enter district name" >
+                            </div>
+                            <div class="input-field">
+                                <label>Local level</label>
+                                <input type="text" id="contact-local-level" placeholder="Enter rural/municipality/metro name" >
+                            </div>
+                            <div class="input-field">
+                                <label>Ward Number</label>
+                                <input type="number" id="contact-ward-number" placeholder="Enter ward number" >
+                            </div>
+                            <div class="input-field">
+                                <label>Tole</label>
+                                <input type="text" id="contact-tole" placeholder="Enter tole name">
+                            </div>
+                        </div>
+                </div>
+                <hr>
+                <div class="details family">
+                    <span class="title">Guardian's Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Guardian's Name</label>
+                            <input type="text" placeholder="Enter guardian name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Relation</label>
+                            <input type="text" placeholder="Your relation with the guardian" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter his/her Occupation" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Organization</label>
+                            <input type="text" placeholder="Enter his/her organization" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Enter his/her phone number" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Email address(if any)">
+                        </div>
+                    </div>
+                </div>
+            <hr>
+                <div class="details address">
+                        <span class="title">SEE or Equivalent</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Board</label>
+                                <input type="text" placeholder="Name of board" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" placeholder="Enter country of board" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Year Passed</label>
+                                <input type="text" placeholder="Passed Year" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Percentage or GPA</label>
+                                <input type="number" placeholder="Enter your score" required>
+                            </div>
+                    </div>
+                    <hr>
+                    <div class="details family">
+                        <span class="title">+2 or Equivalent</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Board</label>
+                                <input type="text" placeholder="Name of board" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" placeholder="Enter country of board" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Year Passed</label>
+                                <input type="text" placeholder="Passed Year" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Percentage or GPA</label>
+                                <input type="number" placeholder="Enter your score" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="details family">
+                            <span class="title">Award/Recognition (if any)</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Award</label>
+                                    <input type="text" placeholder="Name of award" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Awarding Agency</label>
+                                    <input type="text" placeholder="Enter name of awarding agency" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Award Recieved Year</label>
+                                    <input type="text" placeholder="Enter year of award recieved" required>
+                                </div>
+                            </div>
+
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script src="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.4.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>

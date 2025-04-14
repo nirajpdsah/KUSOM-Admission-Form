@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Slab:wght@700&display=swap');
+
+html,
+body {
+  height: 100%;
+  /* Ensure the html and body take up the full height */
+  margin: 10;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+}
+
+body {
+  background-image: url('https://scontent.fktm21-1.fna.fbcdn.net/v/t39.30808-6/347601580_586204980351730_378558673909836627_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Hzv5WDCAArMQ7kNvgGNlRMU&_nc_ht=scontent.fktm21-1.fna&oh=00_AYAmjmBybRErcWokL71kEOlI3n__QMM_cNEa22UxvTfzlw&oe=66CA15B6');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  /* Remove default body margin */
+  padding: 0;
+  /* Remove default body padding */
+}
+
+#container {
+  font-family: sans-serif;
+  background-color: rgba(240, 240, 240, 0.9);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  /* Center items vertically in the container */
+  padding: 20px;
+  justify-content: space-between;
+  /* Space out items: logo-left, text-center, logo-right */
+}
+
+#logo-left {
+  width: 120px;
+  /* Adjust width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+#logo-right {
+  width: 120px;
+  /* Adjust width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+#text-content {
+  display: flex;
+  flex-direction: column;
+  /* Stack headings vertically */
+  align-items: center;
+  /* Center headings horizontally */
+  line-height: 0;
+}
